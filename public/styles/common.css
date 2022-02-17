@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+    --font-family-sarala: 'Sarala', sans-serif;
+    --font-family-poppins: 'Poppins', sans-serif;
+    --main-background-color: #f2f5f8;
+    --secondary-background-color:#f8f7f5;
+    --padding: 1rem;
+    --margin: 2rem;
+}
+
+.link-btn{
+    border-radius: 12px;
+    padding:0.6rem 3.5rem;
+    background-color: #966e40;
+    color:#fff;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    transition: 0.3s ease 0s;
+    filter:drop-shadow(8px 8px 15px rgb(34, 32, 32));
+}
+
+.link-btn:hover{
+    background-color:rgb(163, 123, 78);
+}
+
+
+.header-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding);
+    background-color: transparent;
+    z-index:110;
+    position:fixed;
+    width:100%;
+    transition: 0.6s;
+    
+}
+
+header.active{
+    background-color:rgba(0,0,0,0.8);
+    transition: 0.6s;
+}
+
+.brand-name{
+    font-family: var(--font-family-sarala);
+    font-size:larger;
+    font-weight: bold;
+    margin: 0 var(--margin);
+    color:#fff;
+    
+}
+
+li, a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav-links{
+    list-style: none;
+    margin: 0 var(--margin);
+}
+
+.nav-links li {
+    display:inline-block;
+    padding: 0 var(--padding);
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color:#A0673C;
+}
+
+.nav-links-footer{
+    list-style: none;
+}
+
+.nav-links-footer li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links-footer li a:hover {
+    color:#A0673C;
+}
+
+.mobile-header-navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index:110;
+    position:fixed;
+    width:100%;
+    transition: 0.6s;
+    display: none;
+    
+}
+
+.navigation-holder{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#mobile-nav{
+    width:100%;
+    padding: 1rem;
+    background-color:#A0673C;
+}
+
+
+.mobile-nav-container{
+    display:none;
+    position:absolute;
+    top:3.9rem;
+}
+
+.mobile-nav-links{
+    list-style: none;
+    margin: 0 var(--margin);
+}
+
+.mobile-nav-links li {
+    padding: 0 var(--padding);
+}
+
+.mobile-nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.mobile-nav-links li a:hover {
+    color:#000;
+}
+
+
+.mobile-nav-wrap{
+    display:flex;
+    flex-direction: row;
+}
+
+.btn-menu{
+    border:none;
+    color:#A0673C;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-close{
+    float:right;
+    border:none;
+    color:#fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px){
+    .header-navigation{
+        display: none;
+    }
+
+    .mobile-header-navigation{
+        background-color:#000;
+        display:flex;
+        position:relative;
+    }
+
+
+}
+
+footer {
+    position: relative;
+    margin-top: auto;
+    background-color: #000;
+    display:flex;
+    flex-direction: column;
+    color:#fff;
+}
+
+.footer-details-container{
+    padding: 3rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:1.5rem;
+    background-color:rgb(31, 31, 31);
+}
+
+.company-details-container h3{
+    color:#A0673C;
+    margin-bottom: 1rem;
+}
+
+.explore-container h3{
+    color:#A0673C;
+    margin-bottom:1rem;
+}
+
+.social-container h3{
+    color:#A0673C;
+    margin-bottom:1rem;
+}
+
+.social-icon{
+    transition: 0.6s;
+    margin:0 0.5rem;
+    
+}
+
+.social-icon:hover{
+    color:#A0673C;
+}
+
+.contacts-container h3{
+    color:#A0673C;
+    margin-bottom:1rem;
+}
+
+.contact-icon{
+    font-size: 16px;
+}
+
+.icon-text{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.p-copyright{
+    margin:1rem 0;
+    text-align: center;
+}
+
+.brand-name-footer{
+    font-family: var(--font-family-sarala);
+    color:#fff;
+}
+
+@media screen and (max-width: 780px){
+    .footer-details-container{
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Garden - Menu </title>
+  <meta name="description" content="Coffee Garden's menu offers various coffee types and coffee products.">
+  <meta name="keywords"
+    content="coffee garden, coffee, coffee shop, coffee menu, arabica, espresso, latte, cappuccino, americano">
+  <meta name="author" content="Ivan Bobev">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/menu-style.css" />
+  <script src="https://kit.fontawesome.com/1ecc2767b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header-navigation">
+    <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+    <nav>
+      <ul class="nav-links">
+        <li id="nav-menu"><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li id="nav-coffee"><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li id="nav-about"><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li id="nav-contacts"><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li id="nav-locations"><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="mobile-header-navigation">
+    <div class="navigation-holder">
+      <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+      <button class="btn-menu" onclick="displayMenu()"><i class="fas fa-bars fa-2x"></i> </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-container">
+      <button onclick="closeMenu()" class="btn-close"><i class="fas fa-times fa-2x"></i></button>
+      <ul class="mobile-nav-links">
+        <li><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="menu-container">
+      <h1>Coffee Products Menu</h1>
+      <div class="products-navigation">
+        <button onclick="displayCoffeeProducts()" id="btnCoffee"
+          class="btn-category btn-category-active">Coffee</button>
+        <button onclick="displayMerchProducts()" id="btnMerch" class="btn-category">Merchandise</button>
+      </div>
+      <section id="coffee-products" class="products-grid">
+        <div class="product-card">
+          <img src="./images/menu/espresso.png" alt="Cup of espresso" class="product-image">
+          <h2>Espresso</h2>
+          <p>Shot of espresso made with hot water and roasted beans of your choice.</p>
+          <p>Price: &#8364; 4.2</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/menu/latte.png" alt="Cup of latte" class="product-image">
+          <h2>Latte</h2>
+          <p>Espresso shot with steamed milk and a little foam on top, made by the roasted beans you love.</p>
+          <p>Price: &#8364; 6.5</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/menu/cappuccino.png" alt="Cup of cappuccino" class="product-image">
+          <h2>Cappuccino</h2>
+          <p>Shot of espresso half steamed milk half foam made from beans selected by you.</p>
+          <p>Price: &#8364; 7.8</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/menu/americano.png" alt="Cup of americano" class="product-image">
+          <h2>Americano</h2>
+          <p>Espresso shot topped with hot water - a classic made from arabica beans.</p>
+          <p>Price: &#8364; 5.3</p>
+        </div>
+      </section>
+      <section id="merch-products" class="products-grid">
+        <div class="product-card">
+          <img src="./images/menu/coffee-mug.png" alt="Brand coffee mug" class="product-image">
+          <h2>Coffee Mug</h2>
+          <p>A standard coffee mug, you can choose your favorite color.</p>
+          <p>Price: &#8364; 15.0</p>
+        </div>
+        <div class="product-card">
+          <img src="./images/menu/package.png" alt="Roasted Arabica coffee package" class="product-image">
+          <h2>Roasted Arabica</h2>
+          <p>Bestseller beans - arabica roasted, high quality coffee you can make at home.</p>
+          <p>Price: &#8364; 35.0</p>
+        </div>
+      </section>
+    </section>
+
+    <section id="menu-info-container">
+      <h2>Coffee Garden's Menu</h2>
+      <p>At Coffee Garden we always strive to deliver our customers the highest coffee quality but coffee is not the
+        only thing we offer. In the merchandise category you can find coffee mugs, roasted coffee bean packs and other.
+        Don't forget to check out our coffee products if you are interested. </p>
+      <p>Coffee Garden's menu nowadays consists of the most popular coffee drinks; however, there is always an option to
+        make our customers a custom one
+        and if it becomes popular among our community it is possible to find itself on the menu. Should this occur we
+        give the customer that came up with it a chance to name the coffee.
+      </p>
+      <p>
+        Occasionally we put on our menu special coffees for a limited amount of time so if you are a coffee person
+        looking for a new experience in the context of coffee check our menu from time to time.
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <div class="footer-details-container">
+      <div class="company-details-container">
+        <h3>Coffee Garden</h3>
+        <p>Every coffee cup is an experience.<br>We are dedicated to coffee brewing,<br>thus every serverd cup has been
+          made with great care! </p>
+      </div>
+      <div class="explore-container">
+        <h3>Explore</h3>
+        <ul class="nav-links-footer">
+          <li><a href="./policy.html" title="Read our privacy policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-container">
+        <h3>Social</h3>
+        <a href="https://www.facebook.com/" title="Visit facebook social page" target="_blank"><i
+            class="fab fa-facebook-square fa-2x social-icon"></i></a>
+        <a href="https://www.instagram.com/" title="Visit instagram social page" target="_blank"><i
+            class="fab fa-instagram fa-2x social-icon"></i></a>
+      </div>
+      <div class="contacts-container">
+        <h3>Contacts</h3>
+        <div class="icon-text">
+          <i class="fas fa-map-marker-alt fa-lg contact-icon"></i>
+          <p>ul. "Montevideo" 21, 1618 g.k. Ovcha kupel 2, Sofia</p>
+        </div>
+        <div class="icon-text">
+          <i class="far fa-envelope fa-lg contact-icon"></i>
+          <p>coffeegarden@mail.com</p>
+        </div>
+        <div class="icon-text">
+          <i class="fas fa-phone fa-lg contact-icon"></i>
+          <p>987-123-4567</p>
+        </div>
+      </div>
+    </div>
+    <p class="p-copyright">Copyright &#169; 2022, <span class="brand-name-footer">Coffee Garden</span>, All rights
+      reserved.</p>
+  </footer>
+
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/menu.js"></script>
+</body>
+
+</html>

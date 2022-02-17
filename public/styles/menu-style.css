@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-poppins);
+    scroll-behavior: smooth;    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+}
+
+.header-navigation{
+    background-color: #000;
+}
+
+#menu-container{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-container h1{
+    font-size: xx-large;
+    color:#865439
+}
+
+.products-navigation{
+    margin:2rem 0;
+    background-color: #865439;
+    width:70%;
+    border-radius:25px;
+
+}
+
+.btn-category{
+    border:none;
+    padding: 0.7rem;
+    width:110px;
+    background-color: #865439;
+    color:#fff;
+    cursor: pointer;
+
+}
+
+.btn-category-active{
+    background-color: #552c11;
+}
+
+#coffee-products{
+    margin:0 2rem;
+    
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:0 7rem;
+}
+
+.product-card{
+    width:300px;
+    height:300px;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.product-card h2{
+    text-align: center;
+}
+
+.product-card p{
+    text-align: left;
+}
+
+.product-image{
+    max-width: 100%;
+    max-height: 100%;
+    filter:drop-shadow(8px 8px 15px #865439);
+    
+}
+
+#merch-products{
+    display: none;
+}
+
+#menu-info-container {
+    margin-top:1rem;
+    padding: 2rem 2rem;
+    background-color: #faf4ed;
+    
+}
+
+#menu-info-container h2 {
+
+    text-align: center;
+    color:#865439;
+    margin-bottom:1rem;
+}
+
+@media screen and (max-width: 780px) {
+    #menu-container{
+        margin-top:3rem;
+    }
+
+    #menu-container h1{
+        font-size: x-large;
+    }
+
+    .products-navigation{
+        width:80%;
+    }
+    .products-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-card h2{
+        font-size: large;
+    }
+
+    .product-image{
+        width:auto;
+        height: 140px;
+    }
+
+}
+

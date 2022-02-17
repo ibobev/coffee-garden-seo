@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Garden - Home </title>
+  <meta name="description"
+    content="Discover your new favorite coffee. Coffee Garden offers exquisite coffee to make your coffee breaks memorable.">
+  <meta name="keywords" content="coffee garden, coffee, coffee shop, coffee break, arabica, coffee time">
+  <meta name="author" content="Ivan Bobev">
+  <meta property="og:title" content="Coffee Garden - Home" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description"
+    content="Discover your new favorite coffee. Coffee Garden offers exquisite coffee to make your coffee breaks memorable." />
+  <meta property="og:url" content="http://www.coffeegarden.free.bg" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/landing-style.css" />
+  <script src="https://kit.fontawesome.com/1ecc2767b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header-navigation">
+    <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+    <nav>
+      <ul class="nav-links">
+        <li id="nav-menu"><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li id="nav-coffee"><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li id="nav-about"><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li id="nav-contacts"><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li id="nav-locations"><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="mobile-header-navigation">
+    <div class="navigation-holder">
+      <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+      <button class="btn-menu" onclick="displayMenu()"><i class="fas fa-bars fa-2x"></i> </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-container">
+      <button onclick="closeMenu()" class="btn-close"><i class="fas fa-times fa-2x"></i></button>
+      <ul class="mobile-nav-links">
+        <li><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="landing-page">
+      <img src="./images/landing/coffee-background.jpg" alt="Coffee beans and cup" class="background-landing-img">
+      <div class="welcome-text-container">
+        <h1>Make your coffee break <span class="brown-background-text">extraordinary</span>!</h1>
+        <p>Make the most of your coffee break with our extraordinary coffee</p>
+      </div>
+    </section>
+
+    <section id="redirect-container">
+      <section id="redirect-about">
+        <div class="redirect-text-wrap">
+          <h2>Learn About Us</h2>
+          <p class="p-redirect">
+            Are you visitng us for the first time? You can learn more about us by clicking the button bellow or manually
+            navigating to our
+            <em>About Us</em> page.
+          </p>
+          <a href="./about.html" title="Visit about us page" class="btn-redirect">About</a>
+        </div>
+      </section>
+
+      <section id="redirect-menu">
+        <div class="redirect-text-wrap">
+          <h2>Menu</h2>
+          <p class="p-redirect">
+            Are you curious what we have to offer? You can view our current coffee products by clicking the button
+            bellow or manually navigate to the
+            <em>Menu</em> page.
+          </p>
+          <a href="./menu.html" title="Visit about us page" class="btn-redirect">Menu</a>
+        </div>
+      </section>
+
+      <section id="redirect-location">
+        <div class="redirect-text-wrap">
+          <h2>Find Shop Locations</h2>
+          <p class="p-redirect">
+            Are you looking for our coffee shop locations? You can quickly find them by clicking the button bellow or
+            manually navigating to our
+            <em>Locations</em> page.
+          </p>
+          <a href="./locations.html" title="Visit locations page" class="btn-redirect">Locations</a>
+        </div>
+      </section>
+    </section>
+
+    <section id="customer-review-container">
+      <h2 class="comment-header">Customer Reviews</h2>
+      <div class="wrap-comments">
+        <div class="comment-box">
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <div class="comment-image-text">
+            <img src="./images/landing/john.jpg" alt="Customer John Smith" class="customer-image">
+            <h2>John Smith</h2>
+            <p>"The coffee is amazing, the customer service is excellent. I strongly recommend trying the coffee at
+              Coffee
+              Garden."</p>
+          </div>
+        </div>
+
+        <div class="comment-box">
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <div class="comment-image-text">
+            <img src="./images/landing/maria.jpg" alt="Customer Maria Garcia" class="customer-image">
+            <h2>Maria Garcia</h2>
+            <p>"Coffee Garden redefined the coffee world for me. This is the place if you are looking to try real
+              coffee."</p>
+          </div>
+        </div>
+
+        <div class="comment-box">
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <span class="fa fa-star star-icon"></span>
+          <div class="comment-image-text">
+            <img src="./images/landing/jane.jpg" alt="Customer Jane Doe" class="customer-image">
+            <h2>Jane Doe</h2>
+            <p>"Beyond excellent coffee for the price. The company indeed responds to customer emails. Definitely
+              recommend."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coffee-beans-container">
+      <h2>Only the Best Coffee Beans</h2>
+      <div class="beans-image-container">
+        <div class="wrap-arrows">
+          <button onclick="moveLeft()" class="btn-arrow"><i class="fas fa-chevron-left fa-2x arrow"></i></button>
+          <button onclick="moveRight()" class="btn-arrow"><i class="fas fa-chevron-right fa-2x arrow"></i></button>
+        </div>
+
+        <div id="robusta" class="info-card">
+          <img src="./images/landing/robusta.png" alt="Robusta coffee beans" class="beans-image">
+          <p class="p-background">Robusta</p>
+          <div class="text-overlay text-overlay-blur">
+            <h3>Robusta Beans</h3>
+            <p>More caffeine less sugary taste,<br>this is the second most popular coffee in the world.</p>
+          </div>
+        </div>
+        <div id="liberica" class="info-card">
+          <img src="./images/landing/liberica.png" alt="Liberica coffee beans" class="beans-image">
+          <p class="p-background">Liberica</p>
+          <div class="text-overlay text-overlay-blur">
+            <h3>Liberica Beans</h3>
+            <p>Imported from West Africa,<br>one of the rarest coffee in the world!</p>
+          </div>
+        </div>
+        <div id="arabica" class="info-card">
+          <img src="./images/landing/arabica.png" alt="Arabica coffee beans" class="beans-image">
+          <p class="p-background">Arabica</p>
+          <div class="text-overlay text-overlay-blur">
+            <h3>Arabica Beans</h3>
+            <p>Twice the sugar amount of Robusta,<br>currently the most consumed coffee in the world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-details-container">
+      <div class="company-details-container">
+        <h3>Coffee Garden</h3>
+        <p>Every coffee cup is an experience.<br>We are dedicated to coffee brewing,<br>thus every serverd cup has been
+          made with great care! </p>
+      </div>
+      <div class="explore-container">
+        <h3>Explore</h3>
+        <ul class="nav-links-footer">
+          <li><a href="./policy.html" title="Read our privacy policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-container">
+        <h3>Social</h3>
+        <a href="https://www.facebook.com/" title="Visit facebook social page" target="_blank"><i
+            class="fab fa-facebook-square fa-2x social-icon"></i></a>
+        <a href="https://www.instagram.com/" title="Visit instagram social page" target="_blank"><i
+            class="fab fa-instagram fa-2x social-icon"></i></a>
+      </div>
+      <div class="contacts-container">
+        <h3>Contacts</h3>
+        <div class="icon-text">
+          <i class="fas fa-map-marker-alt fa-lg contact-icon"></i>
+          <p>ul. "Montevideo" 21, 1618 g.k. Ovcha kupel 2, Sofia</p>
+        </div>
+        <div class="icon-text">
+          <i class="far fa-envelope fa-lg contact-icon"></i>
+          <p>coffeegarden@mail.com</p>
+        </div>
+        <div class="icon-text">
+          <i class="fas fa-phone fa-lg contact-icon"></i>
+          <p>987-123-4567</p>
+        </div>
+      </div>
+    </div>
+    <p class="p-copyright">Copyright &#169; 2022, <span class="brand-name-footer">Coffee Garden</span>, All rights
+      reserved.</p>
+  </footer>
+
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/slider.js"></script>
+</body>
+
+</html>

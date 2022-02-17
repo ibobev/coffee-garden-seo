@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Garden - Contacts </title>
+  <meta name="description" content="Coffee Garden's contact details and contact form.">
+  <meta name="keywords"
+    content="coffee garden, coffee garden contacts, coffee shop contact, contact details, contact coffee garden">
+  <meta name="author" content="Ivan Bobev">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/contacts-style.css" />
+  <script src="https://kit.fontawesome.com/1ecc2767b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header-navigation">
+    <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+    <nav>
+      <ul class="nav-links">
+        <li id="nav-menu"><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li id="nav-coffee"><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li id="nav-about"><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li id="nav-contacts"><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li id="nav-locations"><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="mobile-header-navigation">
+    <div class="navigation-holder">
+      <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+      <button class="btn-menu" onclick="displayMenu()"><i class="fas fa-bars fa-2x"></i> </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-container">
+      <button onclick="closeMenu()" class="btn-close"><i class="fas fa-times fa-2x"></i></button>
+      <ul class="mobile-nav-links">
+        <li><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="under-div"></div>
+    <section id="contact-form">
+
+      <div class="form-wrap">
+        <div class="icon-holder">
+          <i class="fas fa-paper-plane fa-5x contacts-icon-main"></i>
+          <div class="icon-text">
+            <i class="far fa-envelope fa-lg contacts-icon"></i>
+            <p>coffeegarden@mail.com</p>
+          </div>
+          <div class="icon-text">
+            <i class="fas fa-phone fa-lg contacts-icon"></i>
+            <p>987-123-4567</p>
+          </div>
+        </div>
+        <form class="form-box">
+          <h1>Contact Us</h1>
+          <label class="label-style">Name</label>
+          <input type="text" class="input-style" placeholder="Enter your name...">
+          <label class="label-style">Email</label>
+          <input type="email" class="input-style" placeholder="Enter your email...">
+          <label class="label-style">Message</label>
+          <textarea class="text-area-style" placeholder="Enter your message..." cols="10" rows="5"></textarea>
+          <input type="submit" value="Send" class="submit-style" disabled>
+        </form>
+      </div>
+
+      <section id="feedback">
+        <form class="form-box-feedback">
+          <h2>Feedback</h2>
+          <label class="label-style">Name</label>
+          <input type="text" class="input-style" placeholder="Enter your name...">
+          <label class="label-style">Email</label>
+          <input type="email" class="input-style" placeholder="Enter your email...">
+          <label class="label-style">Feedback</label>
+          <textarea class="text-area-style-feedback" placeholder="Enter your feedback..." cols="10" rows="5"></textarea>
+          <input type="submit" value="Send" class="feedback-submit-style" disabled>
+        </form>
+      </section>
+
+      <section id="feedback-text-container">
+        <h2>We care about feedback</h2>
+        <p>Our goal at Coffee Garden is to provide the best customer service for our clients. Feedback is very
+          important to achieve this goal.</p>
+        <p>
+          In order for us to improve our sevices, we care about our customers feedback and experience. If you are
+          happy
+          with our services or disappointed in some way we
+          would like to hear from you. No matter the case - we value every feedback. After all we are here today
+          because
+          of you - our dearest customers. Use the feedback form to contemplate your concerns and/or satisfaction with
+          us.
+        </p>
+      </section>
+    </section>
+
+    <section id="contact-info-container">
+      <div class="info-card">
+        <div class="info-text-wrap">
+          <h2>Coffee Garden - HQ</h2>
+          <p>Coffee Garden's HQ (Headquarters) is located in Sofia, Bulgaria, ul. "Montevideo" 21, 1618 g.k. Ovcha
+            kupel
+            2 as shown on the map. Should you want to pay us a visit we strongly recommend using the contact form
+            above,
+            writing an email,
+            or giving us a call at the provided phone numbers.
+          </p>
+          <p>Keep in mind that we receive emails by the hour, so it can take up to two working days to give you a
+            reply.
+            Once communication
+            has been established we will give you all the required information regarding your request.
+          </p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.244071481137!2d23.25196658389683!3d42.67737198547983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa9b3aa7884ac1%3A0xb38c9b8d4a5f5b50!2sul.%20%22Montevideo%22%2021%2C%201618%20kv.%20Ovcha%20kupel%2C%20Sofia!5e0!3m2!1sen!2sbg!4v1644941857099!5m2!1sen!2sbg"
+          allowfullscreen="" loading="lazy" class="contact-map"></iframe>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="footer-details-container">
+      <div class="company-details-container">
+        <h3>Coffee Garden</h3>
+        <p>Every coffee cup is an experience.<br>We are dedicated to coffee brewing,<br>thus every serverd cup has been
+          made with great care! </p>
+      </div>
+      <div class="explore-container">
+        <h3>Explore</h3>
+        <ul class="nav-links-footer">
+          <li><a href="./policy.html" title="Read our privacy policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-container">
+        <h3>Social</h3>
+        <a href="https://www.facebook.com/" title="Visit facebook social page" target="_blank"><i
+            class="fab fa-facebook-square fa-2x social-icon"></i></a>
+        <a href="https://www.instagram.com/" title="Visit instagram social page" target="_blank"><i
+            class="fab fa-instagram fa-2x social-icon"></i></a>
+      </div>
+      <div class="contacts-container">
+        <h3>Contacts</h3>
+        <div class="icon-text">
+          <i class="fas fa-map-marker-alt fa-lg contact-icon"></i>
+          <p>ul. "Montevideo" 21, 1618 g.k. Ovcha kupel 2, Sofia</p>
+        </div>
+        <div class="icon-text">
+          <i class="far fa-envelope fa-lg contact-icon"></i>
+          <p>coffeegarden@mail.com</p>
+        </div>
+        <div class="icon-text">
+          <i class="fas fa-phone fa-lg contact-icon"></i>
+          <p>987-123-4567</p>
+        </div>
+      </div>
+    </div>
+    <p class="p-copyright">Copyright &#169; 2022, <span class="brand-name-footer">Coffee Garden</span>, All rights
+      reserved.</p>
+  </footer>
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/contacts.js"></script>
+</body>
+
+</html>

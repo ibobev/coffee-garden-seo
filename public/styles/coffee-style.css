@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family-poppins);
+    scroll-behavior: smooth;    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-background-color);
+}
+
+.header-navigation{
+    background-color: #000;
+}
+
+#coffee-article-container {
+    margin-top:5rem;
+    margin-bottom:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#coffee-article-container h1{
+    font-size: xx-large;
+    text-align: center;
+    color:#865439;
+    margin-bottom:1rem;
+}
+
+.image-text-container{
+    display: flex;
+    background-color: #fff;
+    margin: 1rem 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    width: 80%;
+}
+
+.article-img{
+    width:380px;
+    height:auto;
+}
+
+.article-img-mobile{
+    display: none;
+}
+
+.article-text{
+    flex-basis: 100%;
+    padding: 1rem 2rem;
+    
+}
+
+.link-holder{
+    margin:2rem 0;
+    text-align: center;
+    
+}
+
+.link-style{
+    
+    padding: 0.6rem 1rem;
+    background-color:#865439;
+    color:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.336);
+}
+
+.link-style:hover{
+    background-color:rgb(163, 123, 78);
+}
+
+@media screen and (max-width: 1355px){
+
+    .article-img{
+        display: none;
+    }
+
+    .article-img-mobile{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-text-container{
+        flex-direction: column;
+    }
+    
+    .article-text{
+        position: relative;
+        color:#000;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 780px) { 
+    #coffee-article-container {
+        margin:0 0.3rem;
+        
+    }
+
+    #coffee-article-container h1{
+        font-size: x-large;
+    }
+
+    .image-text-container{
+        width:100%;
+        
+    }
+
+    .article-text{
+        padding: 1rem;
+    }
+
+    .coffee-h2{
+        font-size: large;
+    }
+    
+}

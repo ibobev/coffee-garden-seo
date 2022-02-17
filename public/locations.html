@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Garden - Shop Locations </title>
+  <meta name="description" content="Find out Coffee Garden's shop locations.">
+  <meta name="keywords" content="coffee garden, coffee, coffee shop, coffee shop location, location">
+  <meta name="author" content="Ivan Bobev">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="./styles/common.css" />
+  <link rel="stylesheet" href="./styles/locations-style.css" />
+  <script src="https://kit.fontawesome.com/1ecc2767b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header-navigation">
+    <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+    <nav>
+      <ul class="nav-links">
+        <li id="nav-menu"><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li id="nav-coffee"><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li id="nav-about"><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li id="nav-contacts"><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li id="nav-locations"><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header class="mobile-header-navigation">
+    <div class="navigation-holder">
+      <a href="./index.html" title="Visit landing page" class="brand-name">Coffee Garden&trade;</a>
+      <button class="btn-menu" onclick="displayMenu()"><i class="fas fa-bars fa-2x"></i> </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-container">
+      <button onclick="closeMenu()" class="btn-close"><i class="fas fa-times fa-2x"></i></button>
+      <ul class="mobile-nav-links">
+        <li><a href="./menu.html" title="Take a look at our products">Menu</a></li>
+        <li><a href="./coffee.html" title="Learn more about our coffee">Coffee</a></li>
+        <li><a href="./about.html" title="Discover Coffee Garden's history">About Us</a></li>
+        <li><a href="./contacts.html" title="Find out how to contact us">Contacts</a></li>
+        <li><a href="./locations.html" title="Explore shop locations">Locations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="location-container">
+      <h1>Coffee Shop Locations</h1>
+      <div class="location-card">
+        <div class="location-details-container">
+          <h2>Coffee Garden Central</h2>
+          <div class="icon-text-wrap">
+            <i class="fas fa-map-marked-alt location-icon"></i>
+            <p> bul. "Aleksandar Stamboliyski" 25-21, 1000 Sofia Center, Sofia</p>
+          </div>
+          <div class="icon-text-wrap">
+            <i class="fas fa-phone location-icon"></i>
+            <p> 678-912-3456</p>
+          </div>
+          <div class="icon-text-wrap">
+            <i class="fas fa-clock location-icon"></i>
+            <p> 09:00 - 21:00</p>
+          </div>
+          <div class="icon-text-wrap">
+            <i class="fas fa-calendar-day location-icon"></i>
+            <p>Monday - Saturday</p>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.3093562133618!2d23.31798917030996!3d42.69716999252684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2338536c59be58c5!2zNDLCsDQxJzQ5LjgiTiAyM8KwMTknMDkuNSJF!5e0!3m2!1sen!2sbg!4v1644870671576!5m2!1sen!2sbg"
+          allowfullscreen="" loading="lazy" class="map-style"></iframe>
+      </div>
+
+      <div class="location-card">
+        <div class="location-details-container">
+          <h2>Coffee Garden South Park</h2>
+          <div class="icon-text-wrap">
+            <i class="fas fa-map-marked-alt location-icon"></i>
+            <p>ulitsa "Orehova gora", 1408 Sofia</p>
+          </div>
+          <div class="icon-text-wrap">
+            <i class="fas fa-phone location-icon"></i>
+            <p> 567-891-2345</p>
+          </div>
+          <div class="icon-text-wrap">
+            <i class="fas fa-clock location-icon"></i>
+            <p> 09:00 - 20:00</p>
+          </div>
+          <div class="icon-text-wrap">
+            <i class="fas fa-calendar-day location-icon"></i>
+            <p>Monday - Friday</p>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4913599625593!2d23.301871315332807!3d42.67213297916707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe99c2d637eb185f3!2zNDLCsDQwJzE5LjciTiAyM8KwMTgnMTQuNiJF!5e0!3m2!1sen!2sbg!4v1644953600248!5m2!1sen!2sbg"
+          allowfullscreen="" loading="lazy" class="map-style"></iframe>
+      </div>
+    </section>
+
+    <section id="location-info-container">
+      <h2>Coffee Shops Information</h2>
+      <p>Above are our current coffee shop locations. We are constantly improving and trying to expand to other
+        locations. In case you find it
+        difficult to visit us and try our coffee - we make home deliveries. Use the provided phone numbers at any of our
+        shops to make a delivery request.
+        Keep in mind that a delivery can take up to an hour or so depending on your location and city traffic.</p>
+      <p>
+        At this moment we only provide this service in the city of Sofia. However, regarding our merch(coffee mugs,
+        roasted bean packages) we can deliver
+        outside of the city within the country borders. We are also working on our mobile delivery app, you can expect
+        it later this year.
+      </p>
+      <p>
+        In regard of the pandemic, all the necessary precautions are taken in order for our customers to enjoy their
+        coffee without disturbance. We work at 50% capacity on the spot and disinfect hourly.
+        If you - the customer, have any suggestions regarding our services feel free to contact us at any time. Stay safe.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-details-container">
+      <div class="company-details-container">
+        <h3>Coffee Garden</h3>
+        <p>Every coffee cup is an experience.<br>We are dedicated to coffee brewing,<br>thus every serverd cup has been
+          made with great care! </p>
+      </div>
+      <div class="explore-container">
+        <h3>Explore</h3>
+        <ul class="nav-links-footer">
+          <li><a href="./policy.html" title="Read our privacy policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="social-container">
+        <h3>Social</h3>
+        <a href="https://www.facebook.com/" title="Visit facebook social page" target="_blank"><i
+            class="fab fa-facebook-square fa-2x social-icon"></i></a>
+        <a href="https://www.instagram.com/" title="Visit instagram social page" target="_blank"><i
+            class="fab fa-instagram fa-2x social-icon"></i></a>
+      </div>
+      <div class="contacts-container">
+        <h3>Contacts</h3>
+        <div class="icon-text">
+          <i class="fas fa-map-marker-alt fa-lg contact-icon"></i>
+          <p>ul. "Montevideo" 21, 1618 g.k. Ovcha kupel 2, Sofia</p>
+        </div>
+        <div class="icon-text">
+          <i class="far fa-envelope fa-lg contact-icon"></i>
+          <p>coffeegarden@mail.com</p>
+        </div>
+        <div class="icon-text">
+          <i class="fas fa-phone fa-lg contact-icon"></i>
+          <p>987-123-4567</p>
+        </div>
+      </div>
+    </div>
+    <p class="p-copyright">Copyright &#169; 2022, <span class="brand-name-footer">Coffee Garden</span>, All rights
+      reserved.</p>
+  </footer>
+
+  <script src="./scripts/header.js"></script>
+  <script src="./scripts/locations.js"></script>
+
+</body>
+
+</html>
